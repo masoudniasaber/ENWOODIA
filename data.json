@@ -1,0 +1,60 @@
+{
+  "cltSuppliers": [
+    {
+      "supplier": "Red Stag",
+      "layups": [
+        {
+          "layup": "CL3/126",
+          "layers": [
+            { "thickness_mm": 42 },
+            { "thickness_mm": 42, "E_GPa": 6 },
+            { "thickness_mm": 42, "E_GPa": 8 }
+          ]
+        },
+        {
+          "layup": "CL5/144",
+          "layers": [
+            { "thickness_mm": 42 },
+            { "thickness_mm": 20, "E_GPa": 6 },
+            { "thickness_mm": 20, "E_GPa": 8 },
+            { "thickness_mm": 20 },
+            { "thickness_mm": 42, "E_GPa": 8 }
+          ]
+        }
+      ]
+    },
+    {
+      "supplier": "Xlam",
+      "layups": [
+        {
+          "layup": "CL3/126",
+          "layers": [
+            { "thickness_mm": 42 },
+            { "thickness_mm": 42, "E_GPa": 6 },
+            { "thickness_mm": 42, "E_GPa": 8 }
+          ]
+        },
+        {
+          "layup": "CL5/144",
+          "layers": [
+            { "thickness_mm": 42 },
+            { "thickness_mm": 20, "E_GPa": 6 },
+            { "thickness_mm": 20, "E_GPa": 8 },
+            { "thickness_mm": 20 },
+            { "thickness_mm": 42, "E_GPa": 8 }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "floorOptions": [
+    { "name": "Option 1" },
+    { "name": "Option 2" }
+  ],
+
+  "ceilingOptions": [
+    { "name": "Option 1" },
+    { "name": "Option 2" }
+  ]
+}
