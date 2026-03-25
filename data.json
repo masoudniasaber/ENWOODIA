@@ -84,7 +84,84 @@
       "rw": "32 (-2; -3)",
       "iic": 17,
       "lnw": "94.9 (-7)",
+      "thickness_mm": 60
+    },
+    {
+      "supplier": "Red Stag",
+      "layup": "CL3/60",
+      "floor": "Option 2",
+      "ceiling": "Option 1",
+      "stc": 31,
+      "rw": "34 (-2; -3)",
+      "iic": 18,
+      "lnw": "92 (-6)",
+      "thickness_mm": 60
+    },
+    {
+      "supplier": "Red Stag",
+      "layup": "CL3/126",
+      "floor": "Option 1",
+      "ceiling": "Option 1",
+      "stc": 36,
+      "rw": "40 (-3; -5)",
+      "iic": 22,
+      "lnw": "85 (-5)",
       "thickness_mm": 126
+    },
+    {
+      "supplier": "Red Stag",
+      "layup": "CL3/126",
+      "floor": "Option 2",
+      "ceiling": "Option 1",
+      "stc": 38,
+      "rw": "42 (-3; -5)",
+      "iic": 24,
+      "lnw": "82 (-5)",
+      "thickness_mm": 126
+    },
+    {
+      "supplier": "Red Stag",
+      "layup": "CL5/144",
+      "floor": "Option 1",
+      "ceiling": "Option 2",
+      "stc": 44,
+      "rw": "47 (-4; -6)",
+      "iic": 28,
+      "lnw": "76 (-4)",
+      "thickness_mm": 144
+    },
+    {
+      "supplier": "Xlam",
+      "layup": "CL3/60",
+      "floor": "Option 1",
+      "ceiling": "Option 1",
+      "stc": 30,
+      "rw": "33 (-2; -3)",
+      "iic": 18,
+      "lnw": "93 (-6)",
+      "thickness_mm": 60
+    },
+    {
+      "supplier": "Xlam",
+      "layup": "CL3/126",
+      "floor": "Option 2",
+      "ceiling": "Option 1",
+      "stc": 37,
+      "rw": "41 (-3; -4)",
+      "iic": 23,
+      "lnw": "83 (-5)",
+      "thickness_mm": 126
+    },
+    {
+      "supplier": "Xlam",
+      "layup": "CL5/144",
+      "floor": "Option 1",
+      "ceiling": "Option 2",
+      "stc": 45,
+      "rw": "48 (-4; -6)",
+      "iic": 30,
+      "lnw": "75 (-4)",
+      "thickness_mm": 144
     }
   ]
 }
