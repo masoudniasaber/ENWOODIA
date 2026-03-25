@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>CLT Tool</title>
-
-    <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,31 +11,33 @@
 <div class="container">
     <h2>CLT Config Tool</h2>
 
-    <!-- Supplier -->
-    <label for="supplier">CLT Supplier</label>
+    <label>CLT Supplier</label>
     <select id="supplier"></select>
 
-    <!-- Layup -->
-    <label for="layup">CLT Layup</label>
+    <label>CLT Layup</label>
     <select id="layup"></select>
 
-    <!-- Floor -->
-    <label for="floor">Floor Surface & Topping</label>
+    <label>Floor Surface & Topping</label>
     <select id="floor"></select>
 
-    <!-- Ceiling -->
-    <label for="ceiling">Ceiling, Insulation & Lining</label>
+    <label>Ceiling, Insulation & Lining</label>
     <select id="ceiling"></select>
 
-    <!-- Layers -->
     <div id="layers"></div>
 
-    <!-- Sketch -->
     <div id="sketch"></div>
+
+    <div id="results">
+        <h3>Results</h3>
+        <p id="stc"></p>
+        <p id="rw"></p>
+        <p id="iic"></p>
+        <p id="lnw"></p>
+        <p id="thickness"></p>
+    </div>
+
 </div>
 
-<!-- Link JS -->
 <script src="index.js"></script>
-
 </body>
 </html>
