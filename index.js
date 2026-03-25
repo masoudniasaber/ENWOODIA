@@ -109,7 +109,7 @@ function drawSketch(layers) {
     });
 }
 
-// 🔥 Results logic
+// Results (notes style)
 function updateResults() {
     if (!currentSupplier) return;
 
@@ -125,17 +125,31 @@ function updateResults() {
         r.ceiling === ceiling
     );
 
+    const noteMain = document.getElementById('note-main');
+    const noteCompliance = document.getElementById('note-compliance');
+    const noteImprove = document.getElementById('note-improve');
+
     if (result) {
-        document.getElementById('stc').textContent = `STC: ${result.stc}`;
-        document.getElementById('rw').textContent = `Rw: ${result.rw}`;
-        document.getElementById('iic').textContent = `IIC: ${result.iic}`;
-        document.getElementById('lnw').textContent = `Ln,w: ${result.lnw}`;
-        document.getElementById('thickness').textContent = `Thickness: ${result.thickness_mm} mm`;
+        noteMain.innerHTML = `
+      The CLT floor configuration (${layup}, thickness <span class="highlight">${result.thickness_mm} mm</span>, 
+      without floor topping or ceiling system) provides an airborne sound insulation of 
+      <span class="highlight">STC ${result.stc} dB</span> and an impact sound insulation of 
+      <span class="highlight">IIC ${result.iic}</span>, with a normalized impact sound level of 
+      <span class="highlight">Ln,w = ${result.lnw}</span>.
+    `;
+
+        noteCompliance.innerHTML = `
+      For intertenancy residential applications in New Zealand, the required performance criteria are 
+      <span class="highlight">STC ≥ 55</span> and <span class="highlight">IIC ≥ 55</span>.
+    `;
+
+        noteImprove.innerHTML = `
+      Acoustic performance can be improved through the addition of a floating floor or resilient acoustic layer, 
+      increased mass (e.g. toppings or linings), and/or a suspended ceiling with insulation.
+    `;
     } else {
-        document.getElementById('stc').textContent = 'No data';
-        document.getElementById('rw').textContent = '';
-        document.getElementById('iic').textContent = '';
-        document.getElementById('lnw').textContent = '';
-        document.getElementById('thickness').textContent = '';
+        noteMain.textContent = "No data available for this configuration.";
+        noteCompliance.textContent = "";
+        noteImprove.textContent = "";
     }
 }

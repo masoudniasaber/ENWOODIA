@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 label {
@@ -19,7 +19,7 @@ select {
     margin-top: 5px;
 }
 
-#layers, #results {
+#layers {
     margin-top: 20px;
 }
 
@@ -33,4 +33,24 @@ select {
     background: #caa472;
     text-align: center;
     font-size: 12px;
+}
+
+#results {
+    margin-top: 40px;
+    padding: 15px;
+    border-top: 2px solid #ccc;
+    background: #f9f9f9;
+}
+
+#results h3 {
+    margin-bottom: 10px;
+}
+
+#results p {
+    line-height: 1.5;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
 }
